@@ -1,0 +1,167 @@
+/* Phoenix Theme Override
+ * Warm cream background (Flexoki Light base) + Phoenix fire palette.
+ */
+
+@define-color background #FFFCF0;
+@define-color foreground #100F0F;
+
+@define-color black #100F0F;
+@define-color red #6094BA;
+@define-color green #771E29;
+@define-color yellow #FDC95F;
+@define-color blue #771E29;
+@define-color magenta #EC482A;
+@define-color cyan #FF9549;
+@define-color white #FFFCF0;
+@define-color bright_black #100F0F;
+@define-color bright_red #EC482A;
+@define-color bright_green #FF9549;
+@define-color bright_yellow #FDC95F;
+@define-color bright_blue #771E29;
+@define-color bright_magenta #FF9549;
+@define-color bright_cyan #FDC95F;
+@define-color bright_white #FFFCF0;
+
+/* Base GTK theme variables */
+@define-color theme_bg_color @background;
+@define-color theme_fg_color @foreground;
+@define-color theme_base_color @background;
+@define-color theme_text_color @foreground;
+@define-color theme_selected_bg_color @magenta;
+@define-color theme_selected_fg_color @background;
+@define-color insensitive_bg_color alpha(@background, 0.5);
+@define-color insensitive_fg_color #6F6E69;
+@define-color insensitive_base_color @background;
+@define-color theme_unfocused_bg_color @background;
+@define-color theme_unfocused_fg_color @foreground;
+@define-color theme_unfocused_base_color @background;
+@define-color theme_unfocused_text_color @foreground;
+@define-color theme_unfocused_selected_bg_color @magenta;
+@define-color theme_unfocused_selected_fg_color @background;
+
+/* Adwaita Color Overrides */
+@define-color accent_bg_color @magenta;
+@define-color accent_fg_color @background;
+@define-color accent_color @cyan;
+
+@define-color window_bg_color @background;
+@define-color window_fg_color @foreground;
+
+@define-color view_bg_color @background;
+@define-color view_fg_color @foreground;
+@define-color sidebar_bg_color @background;
+@define-color sidebar_fg_color @foreground;
+@define-color sidebar_backdrop_color @background;
+@define-color sidebar_shade_color @background;
+
+@define-color headerbar_bg_color alpha(@foreground, 0.04);
+@define-color headerbar_fg_color @foreground;
+@define-color headerbar_backdrop_color @background;
+@define-color headerbar_shade_color @background;
+@define-color headerbar_border_color alpha(@foreground, 0.12);
+
+@define-color card_bg_color alpha(@foreground, 0.03);
+@define-color card_fg_color @foreground;
+@define-color card_shade_color @background;
+
+@define-color thumbnail_bg_color @background;
+@define-color thumbnail_fg_color @foreground;
+
+@define-color shade_color @background;
+@define-color scrollbar_outline_color @background;
+
+@define-color popover_bg_color @background;
+@define-color popover_fg_color @foreground;
+
+@define-color dialog_bg_color @background;
+@define-color dialog_fg_color @foreground;
+
+@define-color destructive_bg_color @red;
+@define-color destructive_fg_color @background;
+
+@define-color success_bg_color @green;
+@define-color success_fg_color @background;
+
+@define-color warning_bg_color @yellow;
+@define-color warning_fg_color @foreground;
+
+@define-color error_bg_color @red;
+@define-color error_fg_color @background;
+
+@define-color borders alpha(@foreground, 0.12);
+
+@define-color window_backdrop_color @background;
+@define-color view_backdrop_color @background;
+
+@define-color menu_bg_color @background;
+@define-color menu_fg_color @foreground;
+
+@define-color entry_bg_color alpha(@foreground, 0.04);
+@define-color entry_fg_color @foreground;
+
+@define-color button_bg_color alpha(@foreground, 0.06);
+@define-color button_fg_color @foreground;
+
+@define-color tooltip_bg_color @background;
+@define-color tooltip_fg_color @foreground;
+@define-color tooltip_border_color alpha(@foreground, 0.12);
+
+@define-color osd_bg_color @background;
+@define-color osd_fg_color @foreground;
+@define-color osd_border_color alpha(@foreground, 0.12);
+
+@define-color filechooser_bg_color @background;
+@define-color filechooser_fg_color @foreground;
+
+@define-color nautilus_window_bg_color @background;
+@define-color nautilus_window_fg_color @foreground;
+
+@define-color portal_bg_color @background;
+@define-color portal_fg_color @foreground;
+
+@define-color filedialog_bg_color @background;
+@define-color filedialog_fg_color @foreground;
+
+@define-color dropdown_bg_color @background;
+@define-color dropdown_fg_color @foreground;
+@define-color dropdown_hover_bg_color alpha(@magenta, 0.15);
+@define-color dropdown_selected_bg_color @magenta;
+@define-color dropdown_selected_fg_color @background;
+
+@define-color pathbar_bg_color @background;
+@define-color pathbar_fg_color @foreground;
+
+@define-color toolbar_bg_color @background;
+@define-color toolbar_fg_color @foreground;
+
+@define-color notebook_bg_color @background;
+@define-color notebook_fg_color @foreground;
+
+@define-color scrollbar_slider_color alpha(@foreground, 0.25);
+@define-color scrollbar_slider_hover_color alpha(@foreground, 0.4);
+@define-color scrollbar_slider_active_color @foreground;
+
+@define-color treeview_bg_color @background;
+@define-color treeview_fg_color @foreground;
+
+@define-color link_color @blue;
+@define-color link_visited_color @magenta;
+
+@define-color selection_bg_color @magenta;
+@define-color selection_fg_color @background;
+
+@define-color content_view_bg @background;
+@define-color content_view_fg @foreground;
+
+@define-color placeholder_text_color alpha(@foreground, 0.4);
+@define-color dim_label_color alpha(@foreground, 0.5);
+
+/* SVG Icons — no inversion needed on light background */
+.svg-icon {
+    filter: none;
+}
+
+/* Sharp corners, Hyprland-inspired */
+* {
+    border-radius: 0;
+}

@@ -1,0 +1,67 @@
+#!/bin/bash
+# Phoenix theme  Claude Code compatibility handler
+# Called by ~/.config/omarchy/hooks/theme-set when the theme changes.
+# Applies Claude Code settings that make diffs readable with Phoenix's ANSI palette.
+
+THEME_NAME="$1"
+
+apply_phoenix_claude_settings() {
+    local settings="$HOME/.claude/settings.json"
+    local claude_json="$HOME/.claude.json"
+
+    # ~/.claude/settings.json — disable syntax highlighting so Claude Code
+    # doesn't override terminal ANSI colors with its own palette
+    if [ -f "$settings" ]; then
+        tmp=$(mktemp)
+        if jq '. + {"syntaxHighlightingDisabled": true}' "$settings" > "$tmp"; then
+            mv "$tmp" "$settings"
+        else
+            rm -f "$tmp"
+        fi
+    fi
+
+    # ~/.claude.json — set Claude Code's internal diff renderer to light mode
+    # so red - lines get a light background with dark text (readable on Phoenix)
+    if [ -f "$claude_json" ]; then
+        tmp=$(mktemp)
+        if jq '. + {"theme": "light"}' "$claude_json" > "$tmp"; then
+            mv "$tmp" "$claude_json"
+        else
+            rm -f "$tmp"
+        fi
+    else
+        echo '{"theme": "light"}' > "$claude_json"
+    fi
+}
+
+revert_phoenix_claude_settings() {
+    local settings="$HOME/.claude/settings.json"
+    local claude_json="$HOME/.claude.json"
+
+    if [ -f "$settings" ]; then
+        tmp=$(mktemp)
+        if jq 'del(.syntaxHighlightingDisabled)' "$settings" > "$tmp"; then
+            mv "$tmp" "$settings"
+        else
+            rm -f "$tmp"
+        fi
+    fi
+
+    if [ -f "$claude_json" ]; then
+        tmp=$(mktemp)
+        if jq 'del(.theme)' "$claude_json" > "$tmp"; then
+            mv "$tmp" "$claude_json"
+        else
+            rm -f "$tmp"
+        fi
+    fi
+}
+
+case "${THEME_NAME,,}" in
+    phoenix)
+        apply_phoenix_claude_settings
+        ;;
+    *)
+        revert_phoenix_claude_settings
+        ;;
+esac

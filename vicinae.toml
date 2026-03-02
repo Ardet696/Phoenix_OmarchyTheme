@@ -1,0 +1,32 @@
+[meta]
+version = 1
+name = "Phoenix"
+description = "A fiery light theme — crimson and gold on warm cream."
+variant = "light"
+inherits = "vicinae-light"
+icon = "/home/ardet/.local/share/omarchy/icon.png"
+
+[colors.core]
+background = "#FFFCF0"
+foreground = "#100F0F"
+secondary_background = "#F0EDE0"
+border = "#EC482A"
+accent = "#EC482A"
+
+[colors.list.item.hover]
+background = "#FDC95F"
+foreground = "#100F0F"
+
+[colors.list.item.selection]
+background = "#FF9549"
+foreground = "#100F0F"
+
+[colors.accents]
+blue = "#771E29"
+green = "#771E29"
+magenta = "#EC482A"
+orange = "#FF9549"
+purple = "#6094BA"
+red = "#6094BA"
+yellow = "#FDC95F"
+cyan = "#FF9549"

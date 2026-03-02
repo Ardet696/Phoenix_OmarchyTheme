@@ -1,0 +1,35 @@
+# Accent and UI colors
+accent = "#EC482A"
+active_border_color = "#FF9549"
+active_tab_background = "#EC482A"
+
+# Cursor colors
+cursor = "#100F0F"
+
+# Primary colors — warm cream background, near-black text (Flexoki Light base)
+foreground = "#100F0F"
+background = "#FFFCF0"
+
+# Selection colors
+selection_foreground = "#100F0F"
+selection_background = "#CECDC3"
+
+# Normal colors (ANSI 0-7) — Phoenix palette replaces all non-neutral colors
+color0 = "#100F0F"
+color1 = "#EC482A"
+color2 = "#771E29"
+color3 = "#FDC95F"
+color4 = "#771E29"
+color5 = "#6094BA"
+color6 = "#FF9549"
+color7 = "#FFFCF0"
+
+# Bright colors (ANSI 8-15)
+color8 = "#6F6E69"
+color9 = "#FF9549"
+color10 = "#771E29"
+color11 = "#FDC95F"
+color12 = "#771E29"
+color13 = "#FF9549"
+color14 = "#FDC95F"
+color15 = "#FFFCF0"

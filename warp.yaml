@@ -1,0 +1,26 @@
+name: Phoenix
+accent: "#EC482A"
+cursor: "#100F0F"
+background: "#FFFCF0"
+foreground: "#100F0F"
+details: lighter
+
+terminal_colors:
+  normal:
+    black:   "#100F0F"
+    red:     "#6094BA"
+    green:   "#771E29"
+    yellow:  "#FDC95F"
+    blue:    "#771E29"
+    magenta: "#EC482A"
+    cyan:    "#FF9549"
+    white:   "#FFFCF0"
+  bright:
+    black:   "#100F0F"
+    red:     "#EC482A"
+    green:   "#FF9549"
+    yellow:  "#FDC95F"
+    blue:    "#771E29"
+    magenta: "#FF9549"
+    cyan:    "#FDC95F"
+    white:   "#FFFCF0"

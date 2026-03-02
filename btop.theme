@@ -1,0 +1,63 @@
+# Main background — warm cream (Flexoki Light base)
+theme[main_bg]="#FFFCF0"
+
+# Main text color — near-black
+theme[main_fg]="#100F0F"
+
+# Title color for boxes
+theme[title]="#100F0F"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#EC482A"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#CECDC3"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#100F0F"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#6F6E69"
+
+# Misc colors for processes box
+theme[proc_misc]="#EC482A"
+
+# Box outline and divider line color
+theme[cpu_box]="#6F6E69"
+theme[mem_box]="#6F6E69"
+theme[net_box]="#6F6E69"
+theme[proc_box]="#6F6E69"
+theme[div_line]="#6F6E69"
+
+# Gradient for all meters and graphs — blue → orange → red (phoenix rising)
+theme[temp_start]="#771E29"
+theme[temp_mid]="#FF9549"
+theme[temp_end]="#EC482A"
+
+theme[cpu_start]="#771E29"
+theme[cpu_mid]="#FF9549"
+theme[cpu_end]="#EC482A"
+
+theme[free_start]="#771E29"
+theme[free_mid]="#FDC95F"
+theme[free_end]="#FF9549"
+
+theme[cached_start]="#FDC95F"
+theme[cached_mid]="#FDC95F"
+theme[cached_end]="#FDC95F"
+
+theme[available_start]="#771E29"
+theme[available_mid]="#771E29"
+theme[available_end]="#771E29"
+
+theme[used_start]="#FF9549"
+theme[used_mid]="#EC482A"
+theme[used_end]="#6094BA"
+
+theme[download_start]="#FDC95F"
+theme[download_mid]="#FF9549"
+theme[download_end]="#EC482A"
+
+theme[upload_start]="#FDC95F"
+theme[upload_mid]="#FF9549"
+theme[upload_end]="#EC482A"
